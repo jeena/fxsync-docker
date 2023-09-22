@@ -24,3 +24,8 @@ servers, because setting up and configuring it is quite complex but it does not 
 5. Setup your reverse proxy server (see nginx-example-com.conf)
 6. Install the systemd service (see fxsync.service) and enable it
 
+### Setup your Firefox
+
+1. In [about:config](about:config) search for identity.sync.tokenserver.uri
+2. Change it from the default to https://fxsync.example.com/1.0/sync/1.5
+3. Log in to Firefox and start syncing.
