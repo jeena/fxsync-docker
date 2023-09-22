@@ -1,0 +1,19 @@
+[Unit]
+Description=Firefox sync server
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+User=jeena
+Group=docker
+WorkingDirectory=/home/jeena/fxsync.jeena.net
+# Shutdown container (if running) when unit is started
+ExecStartPre=/usr/bin/docker-compose -f docker-compose.yaml down
+# Start container when unit is started
+ExecStart=/usr/bin/docker-compose -f docker-compose.yaml up
+# Stop container when unit is stopped
+ExecStop=/usr/bin/docker-compose -f docker-compose.yaml down
+
+[Install]
+WantedBy=multi-user.target
