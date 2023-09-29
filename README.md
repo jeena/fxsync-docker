@@ -9,6 +9,9 @@ and replaces the old python one, which is deprecated.
 
 ## Background
 
+Firefox browser data can be synced across devices. The sync service is normally provided by Mozilla.
+This is selfhosted alternative server written in Rust and dockerized for easier deployment.
+
 `syncstorage-rs` has a [docker release on docker-hub](https://hub.docker.com/r/mozilla/syncstorage-rs/)
 but it also needs a database to run, which this docker-compose.yaml helps setting up and connecting.
 
