@@ -1,8 +1,8 @@
 # fxsync-docker
 
-This repository is holding a working docker-compose setup for documentation pourpuses
+This repository is holding a working docker-compose setup for documentation purposes
 because [syncstorage-rs](https://github.com/mozilla-services/syncstorage-rs)'s documentation
-is not very good to explain how to self host the new rust syncserver.
+is not very good to explain how to self host the new mozilla rust syncserver.
 
 With help of it you can self host the new Firefox sync server, which is written in Rust
 and replaces the old python one, which is deprecated.
