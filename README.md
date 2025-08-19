@@ -1,3 +1,5 @@
+⚠️ This repository has moved to https://git.jeena.net/jeena/fxsync-docker
+
 # fxsync-docker
 
 This repository is holding a working docker-compose setup for documentation purposes
